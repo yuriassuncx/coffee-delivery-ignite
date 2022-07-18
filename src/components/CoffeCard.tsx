@@ -1,7 +1,6 @@
 import { QuantityInput } from "./QuantityInput"
 
 import { ShoppingCart } from "phosphor-react"
-import coffeImage from "../assets/images/americano.png"
 import { formatMoney } from "../utils/formatMoney";
 import { UseCart } from "../hooks/useCart";
 import { useState } from "react";
@@ -43,7 +42,7 @@ export function CoffeCard({ coffee }: CoffeeProps) {
 
     return (
         <div className="w-full bg-base-card p-5 pt-0 flex flex-col items-center text-center rounded-tl-[6px] rounded-r-[36px] rounded-br-[6px] rounded-l-[36px]">
-            <img src={`src/assets/images/${coffee.photo}`} className="w-[7.5rem] h-[7.5rem] mt-[-1.25rem]" />
+            <img src={`${coffee.photo}`} className="w-[7.5rem] h-[7.5rem] mt-[-1.25rem]" />
             <div className="w-full flex flex-wrap items-center justify-center gap-1 mt-4 mb-5">
                 {coffee.tags.map(tag => (
                     <span
