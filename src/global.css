@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input {
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    margin: 0;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+@layer base {
+    body {
+        @apply bg-base-background text-base-text;
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
+@layer components {
+    .container {
+        @apply w-full max-w-[70rem] mr-auto ml-auto;
+    }
+
+    .section {
+        @apply w-full bg-base-card rounded-md p-10;
+    }
+
+    .input {
+        @apply transition duration-150 h-[2.625rem] flex items-center justify-between overflow-hidden rounded border border-solid border-base-button focus-within:border-brand-yellow;
+    }
+
+    .inputWrapper {
+        @apply flex flex-col gap-[0.3rem] relative;
+    }
+
+    .inputWrapperSpan {
+        @apply text-base-error;
+    }
+}
