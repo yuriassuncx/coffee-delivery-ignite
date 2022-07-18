@@ -30,7 +30,7 @@ export function CoffeeCartCard({ coffee }: CoffeeCartCardProps) {
     return (
         <div className="w-full flex flex-col md:flex-row items-center justify-between border-b border-solid border-base-button pb-6 mb-6">
             <div className="flex items-center gap-5">
-                <img src={`src/assets/images/${coffee.photo}`} className="w-16 h-16" />
+                <img src={`${coffee.photo}`} className="w-16 h-16" />
                 <div className="mt-2 h-8 items-center gap-2 space-y-1">
                     <h1 className="text-base lg:text-text-regular-m text-base-subtitle font-regular">{coffee.name}</h1>
                     <div className="flex max-w-[12rem] space-x-1 gap-2 h-full">
