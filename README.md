@@ -1,4 +1,4 @@
-# ToDo App
+# Coffee Delivery - Rocketseat
 
 Project developed according to the Ignite course, with the aim of building a cafe ecommerce.
 
